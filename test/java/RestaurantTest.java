@@ -81,6 +81,10 @@ class RestaurantTest {
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-    
+    @Test
+    public void when_choosing_items_is_done_order_total_should_be_returned(){
+        int totalAmount = restaurant.addItems(itemsList);
+        assertEquals(239,totalAmount);
+    }
 
 }
